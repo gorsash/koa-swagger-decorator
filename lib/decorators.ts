@@ -77,8 +77,8 @@ const request = (method: string, path: string) => (
   descriptor: PropertyDescriptor
 ) => {
   method = toLower(method);
-  descriptor.value.method = method;
-  descriptor.value.path = path;
+  //descriptor.value.method = method;
+  //descriptor.value.path = path;
   swaggerObject.add(target, name, {
     request: { method, path },
     security: [{ ApiKeyAuth: [] }]

@@ -179,14 +179,6 @@ const handleMap = (
 
   // map all methods
   [...staticMethods, ...methods]
-    // filter methods withour @request decorator
-    .filter((item) => {
-      const { path, method } = item;
-      if (!path && !method) {
-        return false;
-      }
-      return true;
-    })
     // add router
     .forEach((item) => {
       router._addKey(`${SwaggerClass.name}-${item.fnName}`);

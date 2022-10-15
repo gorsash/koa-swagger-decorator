@@ -1,6 +1,6 @@
 {
   "name": "koa-swagger-decorator",
-  "version": "1.8.6",
+  "version": "1.9.0",
   "description": "using decorator to automatically generate swagger doc for koa-router",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -30,7 +30,6 @@
     "@types/node": "^16.11.17",
     "chai": "^4.3.4",
     "fast-glob": "^3.2.7",
-    "husky": "^4.3.8",
     "jest": "26",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
@@ -52,11 +51,6 @@
     "prepublish": "npm run build",
     "release": "standard-version",
     "latest": "npm publish --registry=https://registry.npmjs.org"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "keywords": [
     "decorator",

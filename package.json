@@ -1,6 +1,6 @@
 {
   "name": "koa-swagger-decorator",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "using decorator to automatically generate swagger doc for koa-router",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -49,8 +49,8 @@
     "test": "jest",
     "cov": "jest --coverage",
     "prepublish": "npm run build",
-    "release": "standard-version",
-    "latest": "npm publish --registry=https://registry.npmjs.org"
+    "release": "standard-version -m'%s'",
+    "latest": "___npm publish --registry=https://registry.npmjs.org"
   },
   "keywords": [
     "decorator",

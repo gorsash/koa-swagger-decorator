@@ -183,6 +183,11 @@ const handleMap = (
     .forEach((item) => {
       router._addKey(`${SwaggerClass.name}-${item.fnName}`);
       const { path, method } = item;
+      
+      if (!path || !method) {
+         return;
+      }
+        
       let { middlewares = [] } = item;
       const localParams = item.parameters || {};
 
